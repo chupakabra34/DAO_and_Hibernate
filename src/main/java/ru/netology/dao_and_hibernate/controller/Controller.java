@@ -48,4 +48,7 @@ public class Controller {
     public void deleteAllPersons(List<Person> personList) {
         service.deleteAllPersons(personList);
     }
+
+    @GetMapping("/hello")
+    public String hello() {return "Hello world";}
 }
